@@ -14,12 +14,11 @@
     document.write('<br/>');
 }
 
-// var i = +prompt("Введите число" +b);
-//     var b;
+// var a = +prompt("Введите число");
 
-// for (var i = 1; i < b; i++) {
-//     for (var j = 1; j < i; j <= i) {
+//  for(var i = 1; i < a; i++){
+//     for(var j = 1; j <= i; j++){
 //         document.write('*');
 //     }
-//         document.write('<br/>');
+//     document.write('<br/>');
 // }
