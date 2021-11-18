@@ -10,15 +10,16 @@
 var cars = ["Mitsubishi", "Honda", "Toyota", "Suzuki", "Audi", "BMW", "Honda", "Mercedes"];
     console.log("Исходный массив: " + cars);
 
-var element = prompt("Введите название атомобиля: ");
-   if (cars = element) {
-    cars.splice(n, 0, element);
-   }
-     console.log("После вставки: " + cars);
- 
-     if not have element{
-     cars.push();
- }
-    console.log("После добавления: " + cars);
+var element = prompt("Введите название автомобиля: ");
+var index = cars.indexOf(element);
+
+if (index != -1) { // если элемент найден в массиве, то вставляем его после найденного
+    var newElement = prompt("Введите название нового автомобиля: ")
+   cars.splice(index+1, 0, newElement);
+   console.log("После вставки: " + cars);
+} else { // если элемент не найден в массиве, добавляем в конец
+   cars.push(element);
+   console.log("После добавления: " + cars);
+}
     
 
